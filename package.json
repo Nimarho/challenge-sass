@@ -1,0 +1,22 @@
+{
+  "name": "challenge-sass",
+  "version": "1.0.0",
+  "description": "- Repository: `challenge-sass` - Type of Challenge: `Learning Challenge` - Duration: `1/2 day` - Deployment strategy : `Github page` - Team challenge : `solo`",
+  "main": "index.js",
+  "scripts": {
+    "compile":"sass --watch --no-source-map main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nimarho/challenge-sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nimarho/challenge-sass/issues"
+  },
+  "homepage": "https://github.com/Nimarho/challenge-sass#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}

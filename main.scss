@@ -1,0 +1,113 @@
+$mainColor:#6b717f;
+$borderColor:#8C8C8C;
+$headerColor:#BF4080;
+$base-color: gray;
+
+body{
+    font: 100% "Space Mono", monospace;
+    color: $mainColor;
+    margin: 0;
+    padding : 0;
+    background-color: #fff;
+    overflow-x : hidden;
+}
+
+main{
+  padding: 0 1em;
+}
+
+article{
+  
+  section{
+    &#selling-points{
+      flex-grow: 2;
+      flex-basis: 100%;
+    }
+    h2{
+      color:$headerColor;
+    }
+    ul{
+      
+    }
+    @for $i from 1 through 6 {
+      li:nth-child(#{$i}) {
+        background-color: lighten($base-color, $i * 5%);
+      }
+    }
+    flex-grow: 1;
+    flex-basis: 45%;
+    border: 1px $borderColor solid;
+    -webkit-box-shadow: 10px 10px 15px -4px $mainColor;
+    -moz-box-shadow: 10px 10px 15px -4px $mainColor;
+    box-shadow: 10px 10px 15px -4px $mainColor;
+    padding: 16px;
+    margin: 16px;
+    clear: both;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+  code{
+    &.before{
+      float: left;
+      width: 40%;
+    }
+    &.after{
+      float: right;
+      width: 40%;
+    }
+    background: black;
+    border: 1px solid $mainColor;
+    color: $borderColor;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+  }
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1,
+h2,
+h3 {
+    color: $headerColor;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 32px;
+  margin-bottom: 0px;
+}
+
+.success,
+.error,
+.warning {
+    border: 1px solid $borderColor;
+    padding: 16px;
+    color: #fff;
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}
+
+.warning {
+    background-color: orange;
+}
+
+
